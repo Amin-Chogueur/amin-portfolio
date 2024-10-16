@@ -13,7 +13,7 @@ export async function POST(request) {
       subject: "Message from my portfolio",
       html: `<p>Name: ${body.name}</p><p>Email: ${body.email}</p><p>Message: ${body.message}</p>`,
     });
-    console.log(body);
+
     return NextResponse.json({ status: "Email sent successfully" });
   } catch (error) {
     return NextResponse.json(
