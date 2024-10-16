@@ -1,0 +1,16 @@
+.appContainer {
+  margin: auto;
+  padding: 0 160px;
+  background-color: var(--bg);
+  color: var(--textcolor);
+}
+@media (max-width: 992px) {
+  .appContainer {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .appContainer {
+    padding: 10px 20px;
+  }
+}

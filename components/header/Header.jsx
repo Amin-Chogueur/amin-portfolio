@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./header.module.css";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { useState } from "react";
+import ThemeToggle from "../themeToggle/ThemeToggle";
 
 const navLinks = [
   {
@@ -64,6 +65,9 @@ function NavBar() {
             </li>
           );
         })}
+        <li>
+          <ThemeToggle />
+        </li>
       </ul>
       {showLink ? (
         <div className={styles.closeBurger} onClick={handleShowLinks}>
@@ -95,6 +99,9 @@ function NavBar() {
             </li>
           );
         })}
+        <li>
+          <ThemeToggle />
+        </li>
       </ul>
     </nav>
   );

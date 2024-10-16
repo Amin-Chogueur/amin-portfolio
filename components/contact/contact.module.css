@@ -34,7 +34,7 @@
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #555; /* Slightly lighter color for labels */
+  color: var(--textcolor); /* Slightly lighter color for labels */
 }
 
 .contactForm input,
@@ -43,7 +43,8 @@
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background-color: #222;
+  color: var(--inputColor);
+  background-color: var(--inputBg);
 }
 
 .contactForm input:focus,
@@ -57,7 +58,7 @@
   border: none;
   border-radius: 4px;
   background-image: var(--btnBg);
-  color: black;
+  color: var(--BtnColorActive);
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;

@@ -1,5 +1,6 @@
 .details {
-  min-height: 100vh;
+  padding: 30px 0;
+  background-color: var(--bg);
 }
 
 .details h1 {
@@ -41,10 +42,11 @@
   line-height: 1.6;
   font-size: 20px;
   margin-bottom: 30px;
+  color: var(--textcolor);
 }
 .content a {
   background-image: var(--btnBg);
-  color: black;
+  color: var(--inputBg);
   font-size: 20px;
   display: inline-block;
   font-weight: 600;
@@ -69,7 +71,11 @@
   }
 }
 @media (max-width: 768px) {
+  .details {
+    padding: 30px 20px;
+  }
   .details h1 {
+    margin-top: 40px;
     font-size: 28px;
   }
   .details {
@@ -83,11 +89,13 @@
   }
   .content {
     max-width: 600px;
+    margin: 40px 0;
   }
 }
 
 @media (max-width: 480px) {
   .details h1 {
+    margin-top: 20px;
     font-size: 22px;
   }
   .details {

@@ -1,0 +1,23 @@
+.container {
+  background-color: var(--toggleBg);
+  padding: 5px 2px;
+  width: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .container {
+    background-color: var(--toggleBg);
+  }
+}

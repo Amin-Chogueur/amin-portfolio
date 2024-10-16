@@ -10,7 +10,7 @@
   transition: 0.5s;
   z-index: 200;
   padding: 10px 80px;
-  background-color: #16213e;
+  background-color: var(--headerBg);
   color: white;
 }
 .navBar h1 {
@@ -26,12 +26,14 @@
   position: relative;
   font-weight: 500;
   transition: 0.5s;
+  color: var(--BtnColor);
 }
+
 .link:hover {
   opacity: 0.7;
 }
 .active {
-  color: black;
+  color: var(--BtnColorActive);
   background-image: var(--btnBg);
   padding: 3px 8px;
   border-radius: 10px;
@@ -58,10 +60,12 @@
     width: 50px;
     display: block;
     cursor: pointer;
+    color: var(--bergurColor);
   }
   .closeBurger {
     display: block;
     cursor: pointer;
+    color: var(--toggleBg);
   }
   .navBar {
     justify-content: space-between;
@@ -75,14 +79,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     position: absolute;
-    top: -250px;
+    top: -270px;
     left: 0px;
     width: 100%;
-    background-color: black;
+    background-color: var(--headerBg);
     color: white;
-    height: 250px;
+    height: 270px;
     transition: top 0.5s;
     z-index: -10;
   }
@@ -91,6 +96,5 @@
   }
   .active {
     background-image: var(--btnBg);
-    color: black;
   }
 }

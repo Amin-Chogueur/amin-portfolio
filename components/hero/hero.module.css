@@ -44,7 +44,7 @@
   background-image: var(--btnBg);
   padding: 5px 8px;
   border-radius: 15px;
-  color: black;
+  color: var(--BtnColorActive);
   font-size: 18px;
   font-weight: 600;
 }
