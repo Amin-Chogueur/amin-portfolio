@@ -19,8 +19,12 @@
 }
 .skills img {
   margin: auto;
+  transition: 0.5s;
+  cursor: pointer;
 }
-
+.skills img:hover {
+  transform: translateY(-20px);
+}
 @media (max-width: 1024px) {
   .skillscontainer h2 {
     font-size: 30px;

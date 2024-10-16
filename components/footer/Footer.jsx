@@ -1,8 +1,10 @@
 import styles from "./footer.module.css";
 import Link from "next/link";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedin, FaGithubSquare, FaWhatsapp } from "react-icons/fa";
+
 function Footer() {
+  const phoneNumber = "213671265377"; // Phone number without the "+" and spaces
+
   return (
     <footer className={styles.footer}>
       <h2 className="gradientText">
@@ -25,6 +27,13 @@ function Footer() {
         <Link href={"https://github.com/Amin-Chogueur"} target="_blank">
           <FaGithubSquare />
         </Link>
+        <a
+          href={`https://wa.me/${phoneNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp />
+        </a>
       </div>
     </footer>
   );

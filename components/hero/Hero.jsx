@@ -3,6 +3,8 @@ import styles from "./hero.module.css";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+
+import { AiOutlineDownload } from "react-icons/ai";
 const TypeComponent = () => {
   return (
     <TypeAnimation
@@ -38,7 +40,17 @@ function Hero() {
           create fast, responsive, and user-friendly web applications. My work
           emphasizes clean code and delivering a seamless user experience.
         </p>
-        <button>Download CV</button>
+        <a
+          href="/AminChogueur-Resume.pdf"
+          download="Amin_Chogueur_Resume.pdf"
+          className={styles.downloadBtn}
+        >
+          <p>Download CV</p>
+
+          <span>
+            <AiOutlineDownload style={{ fontSize: "22px" }} />
+          </span>
+        </a>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, x: 100 }}

@@ -23,7 +23,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 @media (max-width: 768px) {
@@ -40,7 +40,7 @@
   }
 
   .socialAcount {
-    font-size: 25px; /* Reduce social icons size */
+    font-size: 30px; /* Reduce social icons size */
     gap: 15px; /* Reduce gap between social icons */
   }
 }
@@ -48,10 +48,5 @@
 @media (max-width: 480px) {
   .footer p {
     font-size: 16px; /* Further reduce font size */
-  }
-
-  .socialAcount {
-    font-size: 20px; /* Further reduce social icons size */
-    gap: 10px; /* Further reduce gap between social icons */
   }
 }

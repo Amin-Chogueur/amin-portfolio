@@ -2,7 +2,8 @@
 import { useState, useRef } from "react";
 import styles from "./contact.module.css";
 import { motion, useInView } from "framer-motion";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -17,15 +18,32 @@ function Contact() {
       [name]: value,
     });
   };
+  const [status, setStatus] = useState("SEND");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    setStatus("Sending...");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await res.json();
+      setStatus(result.status);
+      toast.success("Submission Success");
+    } catch (error) {
+      setStatus("Submission failed");
+      toast.error("Error sending email!");
+    } finally {
+      setStatus("SEND");
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    }
   };
 
   const ref = useRef(null);
@@ -90,9 +108,10 @@ function Contact() {
               required
             />
           </div>
-          <button type="submit">SEND</button>
+          <button type="submit">{status}</button>
         </motion.form>
       </div>
+      <ToastContainer />
     </div>
   );
 }
