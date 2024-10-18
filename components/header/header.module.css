@@ -65,7 +65,7 @@
   .closeBurger {
     display: block;
     cursor: pointer;
-    color: var(--toggleBg);
+    color: var(--bergurColor);
   }
   .navBar {
     justify-content: space-between;
