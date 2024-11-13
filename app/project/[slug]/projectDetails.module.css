@@ -17,6 +17,9 @@
   gap: 40px;
   margin: auto;
   width: fit-content;
+  background-color: var(--headerBg);
+  padding: 10px;
+  border-radius: 5px;
 }
 .images {
   display: flex;

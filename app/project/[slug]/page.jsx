@@ -1,13 +1,12 @@
 import Image from "next/image";
 import styles from "./projectDetails.module.css";
-import { data } from "@/projuctData";
+import { myProjects } from "@/projuctData";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
 import { IoEyeSharp } from "react-icons/io5";
 function ProjectDetails({ params }) {
   const projectName = params.slug.replace(/-/g, " ");
-  const project = data.find((item) => item.title === projectName);
-  console.log(project);
+  const project = myProjects.find((item) => item.title === projectName);
   return (
     <div className={styles.details}>
       <h1 className={"gradientText"}>{project.title}</h1>
