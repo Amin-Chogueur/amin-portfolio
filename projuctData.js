@@ -30,7 +30,7 @@ export const myProjects = [
     details:
       "This full-stack Book Library App was developed for a client who runs a library specializing in book sales. The application enables users to browse an extensive collection of books, search by title, and filter by category to find exactly what they’re looking for. Users can easily place orders through the app, offering a streamlined and enjoyable shopping experience. The app is designed to facilitate the client’s business operations and enhance customer engagement, making it an essential tool for their online presence.",
     image: "/ghiz1.png",
-    imagesDetails: ["/ghiz2.png", "/ghiz3.png"],
+    video: "/Ghiz-Read.mp4",
     direction: "right",
     button: "Details",
     linkToWeb: ["https://ghiz-read.vercel.app/"],
@@ -50,7 +50,7 @@ export const myProjects = [
     details:
       "The Book Library Admin Panel is a secure, custom-built platform exclusively accessible to the client. It allows the client to easily manage their book inventory by adding, updating, and organizing book listings, including cover images and categories. Designed with an intuitive interface, the admin panel enables efficient catalog management, ensuring that the online store remains up-to-date with the latest titles available for customers. Robust authentication ensures only the client has access.",
     image: "/admin.png",
-    imagesDetails: ["/admin1.png", "/admin2.png"],
+    video: "/Ghiz-Admin.mp4",
     direction: "left",
     button: "Details",
     linkToWeb: ["https://ghiz-read-admin.vercel.app/"],
