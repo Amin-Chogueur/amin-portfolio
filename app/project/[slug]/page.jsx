@@ -10,24 +10,40 @@ function ProjectDetails({ params }) {
   return (
     <div className={styles.details}>
       <h1 className={"gradientText"}>{project.title}</h1>
-      <div className={styles.imagesContainer}>
-        <Image
-          src={project.image}
-          width={700}
-          height={500}
-          alt={project.title}
-        />
-        <div className={styles.images}>
-          {project.imagesDetails.map((image, i) => (
+  <div className={styles.imagesContainer}>
+        {project.video ? (
+          <video
+            src={project.video}
+            controls
+            width="700"
+            height="500"
+            preload="metadata"
+            poster={project.image}
+          >
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          <>
+            {" "}
             <Image
-              key={i}
-              src={image}
-              width={150}
-              height={150}
-              alt={`image detail ${i}`}
+              src={project.image}
+              width={700}
+              height={500}
+              alt={project.title}
             />
-          ))}
-        </div>
+            <div className={styles.images}>
+              {project.imagesDetails?.map((image, i) => (
+                <Image
+                  key={i}
+                  src={image}
+                  width={150}
+                  height={150}
+                  alt={`image detail ${i}`}
+                />
+              ))}
+            </div>
+          </>
+        )}
       </div>
       <div className={styles.content}>
         <h2 className="gradientText">Technology:</h2>
