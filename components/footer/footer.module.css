@@ -1,0 +1,54 @@
+.footer {
+  background-color: var(--headerBg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 100px;
+}
+.footer h2 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.footer p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--textcolor);
+}
+.footer p a {
+  font-weight: 600;
+}
+
+.socialAcount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 35px;
+  color: var(--textcolor);
+}
+
+@media (max-width: 992px) {
+  .footer {
+    flex-direction: column; /* Stack items vertically */
+    padding: 20px 40px; /* Reduce padding */
+    align-items: center; /* Align items to the start */
+  }
+
+  .footer p {
+    font-size: 18px; /* Slightly smaller font size */
+    text-align: center; /* Center text for better layout */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+
+  .socialAcount {
+    font-size: 30px; /* Reduce social icons size */
+    gap: 15px; /* Reduce gap between social icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer p {
+    font-size: 16px; /* Further reduce font size */
+  }
+}

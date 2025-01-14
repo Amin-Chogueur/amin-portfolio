@@ -1,0 +1,104 @@
+.leftContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-color: var(--headerBg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.rightContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+  background-color: var(--headerBg);
+  margin: 40px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.imgWrapper {
+  width: fit-content;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imageContainer img {
+  border-radius: 10px;
+}
+
+.rightContainer .imgWrapper {
+  margin-left: auto;
+}
+
+.leftContainer .imgWrapper {
+  margin-right: auto;
+}
+
+.content {
+  flex: 1;
+}
+.content h3 {
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.content p {
+  line-height: 1.6;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--textcolor);
+}
+
+.content a {
+  background-image: var(--btnBg);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--BtnColorActive);
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .leftContainer,
+  .rightContainer {
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .imageContainer {
+    margin-bottom: 20px;
+  }
+
+  .content {
+    flex: none;
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .content p {
+    font-size: 16px;
+  }
+
+  .content a {
+    padding: 10px;
+  }
+}

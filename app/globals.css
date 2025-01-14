@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.5s, color 0.1s;
+}
+:root {
+  --textcolor: #c0c0c0;
+  --BtnColor: black;
+  --btnBg: linear-gradient(to right, orange, yellow);
+  --bg: #1a1a2e;
+  --headerBg: #16213e;
+}
+
+.dark {
+  --BtnColor: white;
+  --BtnColorActive: black;
+  --bg: #1a1a2e;
+  --textcolor: #c0c0c0;
+  --headerBg: #16213e;
+  --btnBg: linear-gradient(to right, orange, yellow);
+  --inputBg: #222;
+  --inputColor: #c0c0c0;
+  --toggleBg: black;
+  --bergurColor: rgb(255, 200, 0);
+}
+.light {
+  --BtnColor: black;
+  --BtnColorActive: white;
+  --bg: rgb(231, 230, 230);
+  --textcolor: black;
+  --headerBg: #f3f1f1;
+  --inputBg: #e2dddd;
+  --inputColor: black;
+  --btnBg: linear-gradient(to right, #16213e, #1a1a2e);
+  --toggleBg: #1a1a2e;
+  --bergurColor: #1a1a2e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradientText {
+  background: linear-gradient(to right, orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Light Mode */
+.light .gradientText {
+  background: linear-gradient(to right, #1a1a2e, #16213e);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Dark Mode */
+.dark .gradientText {
+  background: linear-gradient(to right, orange, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradientText {
+  transition: background 0.3s ease;
+}

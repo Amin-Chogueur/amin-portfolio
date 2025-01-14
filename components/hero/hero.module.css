@@ -1,0 +1,99 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.imageContainer {
+  flex: 0.8;
+}
+
+.imageContainer img {
+  margin-left: auto;
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.content {
+  flex: 1.2;
+}
+
+.content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.content p {
+  line-height: 1.6;
+  font-size: 20px;
+}
+.content .downloadBtn {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 5px;
+  margin-top: 20px;
+  background-image: var(--btnBg);
+  padding: 5px 8px;
+  border-radius: 15px;
+  color: var(--BtnColorActive);
+  font-size: 18px;
+  font-weight: 600;
+}
+.downloadBtn p {
+  padding-left: 25px;
+}
+.downloadBtn span {
+  transform: translateY(-20px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+.content .downloadBtn:hover span {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    margin-top: 60px;
+    padding: 0;
+  }
+  .content .downloadBtn {
+    margin: 20px auto 0;
+  }
+
+  .content {
+    flex: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .content h2 {
+    font-size: 36px; /* Smaller font size for headings */
+  }
+
+  .content p {
+    font-size: 18px; /* Smaller font size for paragraphs */
+  }
+}
+
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 28px; /* Even smaller font size for very small screens */
+  }
+
+  .content p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+}
