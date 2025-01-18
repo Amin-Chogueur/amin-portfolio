@@ -5,6 +5,7 @@ import styles from "./header.module.css";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { useState } from "react";
 import ThemeToggle from "../themeToggle/ThemeToggle";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   {
@@ -56,7 +57,7 @@ function NavBar() {
               <Link
                 onClick={() => handleCHangeCurrentLink(link.label)}
                 className={`${styles.link} ${
-                  currentLink === link.label && styles.active
+                  currentLink.includes(link.label) && styles.active
                 } `}
                 href={link.url}
               >
@@ -91,7 +92,7 @@ function NavBar() {
                 }}
                 href={link.url}
                 className={`${styles.link} ${
-                  currentLink === link.label && styles.active
+                  currentLink.includes(link.label) && styles.active
                 }`}
               >
                 {link.label}

@@ -25,7 +25,7 @@ export const myProjects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     ],
     details:
-      "This admin panel for Made4Cloud was developed using Next.js, MongoDB, Tailwind CSS, and the Tiptap library for a rich text editor. It enables the owner to efficiently manage blog content, including creating, updating, and deleting blog posts, as well as organizing posts into categories. These categories allow users to filter blogs on the public-facing website. Additionally, users can comment on blog posts, and the owner can manage these comments directly through the admin panel. This project was built as a new feature after the multi-language website was completed, enhancing the owner’s ability to manage and engage with their content and audience.",
+      "This admin panel for Made4Cloud was developed using Next.js, MongoDB, Tailwind CSS, and the Tiptap library for a rich text editor. It enables the owner to efficiently manage blog content, including creating, updating, and deleting blog posts, as well as organizing posts into categories. These categories allow users to filter blogs on the public-facing website. Additionally, users can comment on blog posts, and the owner can manage these comments directly through the admin panel. This project enhances the owner’s ability to manage and engage with their content and audience.",
     image: "/made4cloud-admin.png",
     direction: "right",
     button: "Details",
