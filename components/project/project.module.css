@@ -8,3 +8,25 @@
   font-weight: 600;
   text-align: center;
 }
+.filter {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.filter button {
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--BtnColor);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.filter button.active {
+  background-image: var(--btnBg);
+  color: var(--BtnColorActive);
+  border: none;
+}
