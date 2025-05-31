@@ -35,13 +35,18 @@ function About() {
       >
         <h2 className={"gradientText"}>About me</h2>
         <p>
-          I started my coding journey two years ago by learning C++ to grasp the
-          fundamentals of programming. From there, I chose to dive into web
-          development, where I see myself continually learning and delivering
-          better results. As a freelancer for Made4Cloud Ltd, I have the
-          opportunity to turn my passion into my profession. There`s nothing
-          better than working in a field where I not only solve problems but
-          also have fun doing what I love every day.
+          I began my coding journey in 2023 by learning C++ to build a strong
+          foundation in programming. Soon after, I discovered my passion for web
+          development and have been growing ever since. As a freelancer for
+          Made4Cloud Ltd, I’ve had the opportunity to work on real-world
+          projects that helped me turn that passion into professional
+          experience.
+        </p>
+        <p>
+          Now, I’m looking to join a company where I can collaborate with a
+          team, continue learning, and take my skills to the next level. I’m
+          excited to contribute, grow alongside experienced developers, and keep
+          doing what I love—building meaningful digital solutions.
         </p>
       </motion.div>
     </div>

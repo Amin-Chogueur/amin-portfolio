@@ -40,8 +40,10 @@
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
-.content p {
+.content ul {
+  list-style: circle;
   line-height: 1.6;
   font-size: 20px;
   margin-bottom: 30px;
@@ -58,6 +60,19 @@
   margin: 10px;
   text-align: center;
   text-transform: capitalize;
+}
+.note {
+  background-color: #1e1e1e; /* dark gray */
+  color: #e5e5e5; /* light gray */
+  padding: 1rem;
+  border-left: 4px solid #facc15; /* yellow-400 */
+  border-radius: 4px;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.note strong {
+  color: #facc15; /* yellow-400 for "Note:" label */
 }
 @media (max-width: 1199px) {
   .imagesContainer {

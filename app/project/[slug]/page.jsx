@@ -11,40 +11,24 @@ function ProjectDetails({ params }) {
     <div className={styles.details}>
       <h1 className={"gradientText"}>{project?.title}</h1>
       <div className={styles.imagesContainer}>
-        {project.video ? (
-          <video
-            src={project.video}
-            controls
-            width="700"
-            height="500"
-            preload="metadata"
-            poster={project.image}
-          >
-            Your browser does not support the video tag.
-          </video>
-        ) : (
-          <>
-            {" "}
-            <Image
-              src={project.image}
-              width={700}
-              height={500}
-              alt={project.title}
-            />
-            {project.imagesDetails && (
-              <div className={styles.images}>
-                {project.imagesDetails?.map((image, i) => (
-                  <Image
-                    key={i}
-                    src={image}
-                    width={150}
-                    height={150}
-                    alt={`image detail ${i}`}
-                  />
-                ))}
-              </div>
-            )}
-          </>
+        <Image
+          src={project?.image}
+          width={700}
+          height={500}
+          alt={project?.title}
+        />
+        {project.imagesDetails && (
+          <div className={styles.images}>
+            {project.imagesDetails?.map((image, i) => (
+              <Image
+                key={i}
+                src={image}
+                width={150}
+                height={150}
+                alt={`${project.title}${i}`}
+              />
+            ))}
+          </div>
         )}
       </div>
       <div className={styles.content}>
@@ -55,7 +39,11 @@ function ProjectDetails({ params }) {
           ))}
         </div>
         <h2 className="gradientText">Description:</h2>
-        <p>{project.details}</p>
+        <ul>
+          {project.features.map((feture, i) => (
+            <li key={i}>{feture}</li>
+          ))}
+        </ul>
         <div className={styles.links}>
           {project.linkToWeb.map((link, i) => (
             <Link key={i} href={link} target={"_blank"}>
@@ -68,6 +56,7 @@ function ProjectDetails({ params }) {
             </Link>
           )}
         </div>
+        {project?.note && <p className={styles.note}>Note: {project?.note}</p>}
       </div>
     </div>
   );

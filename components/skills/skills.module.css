@@ -1,69 +1,89 @@
-.skillscontainer {
-  margin-bottom: 80px;
-  padding-top: 20px;
-  overflow: hidden;
+/* Prevent horizontal scroll on the page */
+
+.skillsContainer {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.skillscontainer h2 {
+.skillsContainer h2 {
   font-size: 35px;
-  margin: 50px 0;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+/* Use a fixed max-width on card, not width */
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1 / 1;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.skillCard:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skillImageWrapper {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillImage {
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+.skillCard:hover .skillImage {
+  filter: none;
+}
+
+.skillLabel {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
   text-align: center;
 }
-.skills {
+
+/* Grid layout - no duplicate */
+
+.skillsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
-  justify-content: center;
-  gap: 50px;
-  height: fit-content;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Default: 5 per row on large screens */
+  gap: 2rem;
+  justify-items: center;
 }
-.skills img {
-  margin: auto;
-  transition: 0.5s;
-  cursor: pointer;
-}
-.skills img:hover {
-  transform: translateY(-20px);
-}
+/* Medium screens (e.g., tablets) - 3 per row */
 @media (max-width: 1024px) {
-  .skillscontainer h2 {
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
-
-  .skills {
-    gap: 40px;
-    grid-template-columns: repeat(auto-fill, 180px);
+  .skillsGrid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 768px) {
-  .skillscontainer h2 {
-    margin-bottom: 30px;
-  }
+/* Small screens (e.g., mobile) - 1 per row */
 
-  .skills {
-    gap: 40px;
-    grid-template-columns: repeat(auto-fill, 120px);
-  }
-}
-
-@media (max-width: 480px) {
-  .skillscontainer {
-    height: auto;
-  }
-
-  .skillscontainer h2 {
-    margin-bottom: 20px;
-  }
-
-  .skills {
-    gap: 30px;
-    grid-template-columns: repeat(auto-fill, 70px);
-  }
-
-  .skills img {
-    width: 100px;
-    height: auto;
+/* Responsive: 1 per row */
+@media (max-width: 640px) {
+  .skillsGrid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
