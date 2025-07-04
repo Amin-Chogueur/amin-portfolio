@@ -1,15 +1,58 @@
 export const myProjects = [
   {
+    id: 2,
+    tech: "next",
+    title: "BookShop Admin Dashboard",
+    description: `A powerful admin dashboard for managing a  book-selling business. Built with Next.js 15 and TypeScript, this platform allows administrators to handle books, categories, orders, and stock with real-time synchronization to a customer-facing app.`,
+    technologies: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
+    features: [
+      "Full book management — create, edit, delete books, and upload images with Cloudinary integration.",
+      " Category management with cascading updates and safe deletion.",
+      " Order management — track, update status, and receive orders from a connected customer app with email notifications.",
+      " Purchase management — restock books, log purchase prices and quantities.",
+      " Dashboard statistics with Chart.js visualizations (orders by status, stock level, books by category).",
+      " Admin authentication via JWT with route protection and password reset via email (Resend).",
+      " Server-side filtering, pagination, and full CRUD via Next.js API routes.",
+      " Connected System – Integrated with a separate customer app for real-time order and stock synchronization.",
+    ],
+    image: "/ghiz-book-manager.png", // replace with your actual preview image path
+    imagesDetails: ["/ghiz-book-manager1.png", "/ghiz-book-manager2.png"], // update with real image paths
+    direction: "left",
+    button: "Details",
+    linkToVercel: {
+      link: "https://ghiz-read-manager.vercel.app/",
+      lable: "ghiz-read-manager.vercel.app",
+    },
+    demoInfo: {
+      admin: {
+        email: "chogueuramine@gmail.com",
+        password: "123123",
+      },
+      userNote:
+        "This is the admin dashboard. You can log in as an admin to test the book, category, and order management features. It is connected in real time with the customer app where users place orders.",
+      warning:
+        "⚠️ This is a demo environment. All changes and orders are for testing purposes only.",
+    },
+    linkToCode: "https://github.com/Amin-Chogueur/ghiz-read-manager",
+  },
+  {
     id: 0,
     tech: "next",
     title: "Evident Academy Platform for Dental Education",
     description: `A real-world project, secure, multilingual, role-based e-commerce platform for a dental academy offering online courses and club memberships.`,
     technologies: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg", // Next.js
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", // TypeScript
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg", // MongoDB
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg", // Mongoose
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
     features: [
@@ -23,13 +66,27 @@ export const myProjects = [
       "Modern UX/UI – Built with Tailwind CSS, React Hook Form, and React Toastify for a responsive, user-friendly experience.",
       "State Management – Redux is used to handle global application state such as cart, user authentication, and admin actions.",
     ],
-
     image: "/evident.png",
     imagesDetails: ["/evident2.png", "/evident1.png"],
     direction: "right",
     button: "Details",
-    linkToWeb: ["https://evident-academy.vercel.app/"],
-    note: "Due to the nature of this project involving sensitive data, full-stack implementation, and secure admin access, the source code is not publicly available. However, I am happy to discuss specific features, workflows, and technologies used in detail during interviews or on request.",
+    linkToWeb: {
+      link: "https://evident-academy.com/",
+      lable: "evident-academy.com",
+    },
+    linkToVercel: {
+      link: "https://evident-academy.vercel.app/",
+      lable: "evident-academy.vercel.app",
+    },
+    demoInfo: {
+      admin: {
+        email: "chogueuramine@gmail.com",
+        password: "123123",
+      },
+      userNote:
+        "You can create a test account using any email address and explore features like browsing, adding courses to cart, and checking out.",
+      warning: "⚠️ This is a demo instance. No real payment is processed.",
+    },
   },
   {
     id: 1,
@@ -49,106 +106,58 @@ export const myProjects = [
       "Demonstrated front-end expertise with React and Next.js in a real-world business project.",
       "Delivered a high-quality, accessible solution aligned with the client’s business goals.",
     ],
+    linkToWeb: {
+      link: "https://made4cloud.com/",
+      lable: "made4cloud.com",
+    },
+    linkToVercel: {
+      link: "https://made4cloud-ltd.vercel.app/",
+      lable: "made4cloud-ltd.vercel.app",
+    },
     image: "/made4cloud.png",
     imagesDetails: ["/made4cloud2.png", "/made4cloud1.png"],
     direction: "left",
     button: "Details",
-    linkToWeb: ["https://made4cloud-ltd.vercel.app/"],
+
     linkToCode: "https://github.com/Amin-Chogueur/made4cloud",
   },
-  // {
-  //   id: 2,
-  //   tech: "next",
-  //   title: "Made4cloud Admin Panel",
-  //   description:
-  //     "A full-stack  Next.js-based admin panel for Made4Cloud, allowing the owner to manage blog posts, categories, and user comments. Built with MongoDB, Tailwind CSS, and Tiptap for rich text editing, it integrates seamlessly with the website.",
-  //   technologies: [
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  //   ],
-  //   details:
-  //     "This admin panel for Made4Cloud was developed using Next.js, MongoDB, Tailwind CSS, and the Tiptap library for a rich text editor. It enables the owner to efficiently manage blog content, including creating, updating, and deleting blog posts, as well as organizing posts into categories. These categories allow users to filter blogs on the public-facing website. Additionally, users can comment on blog posts, and the owner can manage these comments directly through the admin panel. This project enhances the owner’s ability to manage and engage with their content and audience.",
-  //   image: "/made4cloud-admin.png",
-  //   direction: "right",
-  //   button: "Details",
-  //   linkToWeb: [
-  //     "https://made4cloud-admin.vercel.app/",
-  //     "https://made4cloud-blog.vercel.app/",
-  //   ],
-  //   linkToCode: null,
-  // },
 
-  // {
-  //   id: 3,
-  //   tech: "next",
-  //   title: "Ghiz read App",
-  //   description:
-  //     "A full-stack app built for a client’s book library, allowing users to browse, search by title, filter by category, and place orders. Enhances customer engagement and supports seamless online sales.",
-  //   technologies: [
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  //   ],
-  //   details:
-  //     "This full-stack Book Library App was developed for a client who runs a library specializing in book sales. The application enables users to browse an extensive collection of books, search by title, and filter by category to find exactly what they’re looking for. Users can easily place orders through the app, offering a streamlined and enjoyable shopping experience. Fully responsive and styled with Tailwind CSS, the app features a modern and consistent design across all devices. The book data is retrieved from an API I built as part of the project’s second phase, which includes an admin panel exclusively for the client to manage the library’s inventory. This solution is designed to facilitate the client’s business operations and enhance customer engagement, making it an essential tool for their online presence.",
-  //   image: "/ghiz1.png",
-  //   video: "/Ghiz-Read.mp4",
-  //   direction: "left",
-  //   button: "Details",
-  //   linkToWeb: ["https://ghiz-read.vercel.app/"],
-  //   linkToCode: "https://github.com/Amin-Chogueur/ghiz-read",
-  // },
-  // {
-  //   id: 4,
-  //   tech: "next",
-  //   title: "Ghiz Read Admin Panel",
-  //   description:
-  //     "A secure, client-exclusive web app for managing book Library web app. Enables effortless updates, organization, and image hosting to keep the catalog up-to-date, with robust authentication ensuring restricted access.",
-  //   technologies: [
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
-  //     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-  //   ],
-  //   details:
-  //     "The Ghiz Read Admin Panel is a fully responsive web app built exclusively for the owner of Ghiz Read to manage their website. It allows the owner to create, read, update, and delete books and categories, ensuring the catalog remains accurate and up-to-date. Built with Next.js, the admin panel uses MongoDB as the database for efficient data storage and management. Tailwind CSS was used for styling, ensuring a modern and consistent design across all devices. Additionally, Cloudinary is integrated to host and manage book cover images. The admin panel provides the data displayed on the customer-facing web app, seamlessly connecting inventory management with the user experience, making it an essential tool for the client’s business operations.",
-  //   image: "/admin.png",
-  //   video: "/Ghiz-Admin.mp4",
-  //   direction: "right",
-  //   button: "Details",
-  //   linkToWeb: ["https://ghiz-read-admin.vercel.app/"],
-  //   linkToCode: null,
-  // },
   {
-    id: 5,
-    tech: "next",
-    title: "Daily Tasks platform",
-    description:
-      "A task management platform built with Next.js, MongoDB, Tailwind CSS, NextAuth, and Redux. Users can create, update, delete, prioritize, and filter tasks, with secure authentication and a fully responsive design.",
+    id: 3,
+    tech: "react",
+    title: "Bookstore Client App",
+    description: `A modern, responsive bookstore platform built with React and TypeScript. It allows users to browse and search books, manage favorites and cart, and place orders via a seamless cash-on-delivery checkout. All data is fetched from a connected admin dashboard API.`,
     technologies: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", // React
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", // TypeScript
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg", // Redux Toolkit
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", // Tailwind CSS
     ],
     features: [
-      "Users can create, update, delete, and prioritize tasks as high or low priority.",
-      "Built with Next.js, MongoDB, and NextAuth for secure authentication and data handling.",
-      "Redux is used for efficient state management, enabling real-time task updates across the app.",
-      "Tasks can be filtered by status: To Do, In Progress, or Completed, for better task organization.",
-      "The platform is fully responsive, offering a seamless experience on all devices.",
-      "Designed to provide an efficient and accessible task management experience from anywhere.",
-      "Demonstrates the ability to build dynamic, user-focused applications using modern technologies.",
+      " Browse and search books with server-side category filtering, title search, and pagination.",
+      " Save books to a Favorites page for quick access later.",
+      " Full cart functionality: add/remove books, manage quantities, and submit orders.",
+      " Order confirmation page with full details retrieved from the admin API.",
+      "Book detail pages with dynamic routing.",
+      " Contact form to send messages to admin via Resend email API.",
+      " Informational About page.",
+      " Form validation using React Hook Form and Zod.",
+      " Smooth animations powered by Framer Motion.",
+      " Fully responsive layout optimized for all devices.",
     ],
-    image: "/daily.png",
-    imagesDetails: ["/daily1.png", "/daily2.png"],
-    direction: "right",
+    image: "/ghiz-bookShop.png", // Replace with your actual screenshot
+    imagesDetails: ["/ghiz-bookShop1.png", "/ghiz-bookShop2.png"], // Replace with actual images
+    direction: "left",
     button: "Details",
-    linkToWeb: ["https://daily-tasks-saas.vercel.app/"],
-    linkToCode: "https://github.com/Amin-Chogueur/daily_tasks",
+    linkToVercel: {
+      link: "https://ghiz-book-store.vercel.app/",
+      lable: "ghiz-book-store.vercel.app",
+    },
+    linkToCode: " https://github.com/Amin-Chogueur/ghiz-book-store",
   },
 
   {
-    id: 7,
+    id: 4,
     tech: "mern",
     title: "Contact Management System",
     description:
@@ -174,11 +183,15 @@ export const myProjects = [
     imagesDetails: ["/contact-ms.png", "/contact-ms1.png"],
     direction: "left",
     button: "Details",
-    linkToWeb: ["https://contact-msa.vercel.app/"],
+    linkToVercel: {
+      link: "https://contact-msa.vercel.app/",
+      lable: "contact-msa.vercel.app",
+    },
+
     linkToCode: "https://github.com/Amin-Chogueur/contact-ms",
   },
   {
-    id: 8,
+    id: 5,
     tech: "react",
     title: "Food Recipe App",
     description:
@@ -199,7 +212,10 @@ export const myProjects = [
     imagesDetails: ["/food1.png", "/food3.png"],
     direction: "right",
     button: "Details",
-    linkToWeb: ["https://food-recipe-app-byamin.vercel.app/"],
+    linkToVercel: {
+      link: "https://food-recipe-app-byamin.vercel.app/",
+      lable: "food-recipe-app-byamin.vercel.app",
+    },
     linkToCode: "https://github.com/Amin-Chogueur/food-recipe-app",
   },
 ];

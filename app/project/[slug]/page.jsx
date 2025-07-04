@@ -3,6 +3,8 @@ import styles from "./projectDetails.module.css";
 import { myProjects } from "@/projuctData";
 import Link from "next/link";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import { SiVercel } from "react-icons/si";
+import ReactMarkdown from "react-markdown";
 
 function ProjectDetails({ params }) {
   const projectName = params.slug.replace(/-/g, " ");
@@ -38,20 +40,69 @@ function ProjectDetails({ params }) {
             <Image key={i} src={tech} width={60} height={60} alt={"tech"} />
           ))}
         </div>
-        <h2 className="gradientText">Description:</h2>
+        <h2 className="gradientText">Features:</h2>
         <ul>
           {project.features.map((feture, i) => (
             <li key={i}>{feture}</li>
           ))}
         </ul>
         <div className={styles.links}>
-          {project.linkToWeb.map((link, i) => (
-            <Link key={i} href={link} target={"_blank"}>
-              <FaGlobe />
-            </Link>
-          ))}
+          {project.linkToWeb && (
+            <p>
+              <span>
+                {" "}
+                <FaGlobe className={styles.icon} />
+                Live Production Site (Client Version):
+              </span>
+
+              <Link href={project?.linkToWeb?.link} target={"_blank"}>
+                {project?.linkToWeb?.lable}
+              </Link>
+            </p>
+          )}
+          {project.linkToVercel && (
+            <p>
+              <span>
+                {" "}
+                <SiVercel className={styles.icon} />
+                Demo Version (My Vercel Account):{" "}
+              </span>
+
+              <Link href={project.linkToVercel.link} target={"_blank"}>
+                {project.linkToVercel.lable}
+              </Link>
+            </p>
+          )}
+
+          {project.demoInfo && (
+            <div className={styles.demoInfo}>
+              <h4>🧪 How to Test the App</h4>
+
+              <div className={styles.demoBlock}>
+                <strong>Admin Login</strong>
+                <p>
+                  Email: <code>{project.demoInfo.admin.email}</code>
+                </p>
+                <p>
+                  Password: <code>{project.demoInfo.admin.password}</code>
+                </p>
+              </div>
+
+              <div className={styles.demoBlock}>
+                <strong>User Testing</strong>
+                <p>{project.demoInfo.userNote}</p>
+              </div>
+
+              <p className={styles.warning}>{project.demoInfo.warning}</p>
+            </div>
+          )}
+
           {project.linkToCode && (
-            <Link href={project.linkToCode} target={"_blank"}>
+            <Link
+              href={project.linkToCode}
+              target={"_blank"}
+              className={styles.github}
+            >
               <FaGithub />
             </Link>
           )}

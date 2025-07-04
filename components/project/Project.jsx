@@ -25,14 +25,7 @@ function Project() {
         >
           Next Js
         </button>
-        <button
-          className={activeFilter === "mern" && styles.active}
-          onClick={() => {
-            setTech("mern"), setActiveFilter("mern");
-          }}
-        >
-          MERN
-        </button>
+
         <button
           className={activeFilter === "react" && styles.active}
           onClick={() => {
@@ -40,6 +33,14 @@ function Project() {
           }}
         >
           React
+        </button>
+        <button
+          className={activeFilter === "mern" && styles.active}
+          onClick={() => {
+            setTech("mern"), setActiveFilter("mern");
+          }}
+        >
+          MERN
         </button>
       </div>
       {filteredProject.map((project, i) => (
