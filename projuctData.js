@@ -80,7 +80,7 @@ export const myProjects = [
     },
     demoInfo: {
       admin: {
-        email: "chogueuramine@gmail.com",
+        email: "evidentAcademy@gmail.com",
         password: "123123",
       },
       userNote:
