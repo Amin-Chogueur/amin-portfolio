@@ -69,10 +69,11 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: var(--textcolor);
 }
 .links a:not(.github) {
   margin-left: 0.3rem;
-  color: #facc15;
+  color: var(--bergurColor);
   text-decoration: underline;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -80,7 +81,7 @@
 
 .icon {
   font-size: 18px;
-  color: #facc15;
+  color: var(--bergurColor);
 }
 
 .github {
