@@ -1,6 +1,8 @@
 .project {
   padding-top: 50px;
   overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .project h2 {

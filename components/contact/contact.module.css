@@ -1,6 +1,8 @@
 .container {
   padding-top: 30px;
   overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
 }
 .container h2 {
   text-align: center;

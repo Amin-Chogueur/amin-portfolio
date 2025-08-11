@@ -64,7 +64,7 @@ function Skills() {
   ];
 
   return (
-    <section ref={ref} className={styles.skillsContainer} id="skills">
+    <section ref={ref} className={styles.skillsContainer} id="Skills">
       <h2 className={"gradientText"}>My Skills</h2>
       <div className={styles.skillsGrid}>
         {skills.map((skill, index) => (
