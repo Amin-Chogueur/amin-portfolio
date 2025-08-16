@@ -3,7 +3,7 @@ export const myProjects = [
     id: 2,
     tech: "next",
     title: "BookShop Admin Dashboard",
-    description: `A powerful admin dashboard for managing a  book-selling business. Built with Next.js 15 and TypeScript, this platform allows administrators to handle books, categories, orders, and stock with real-time synchronization to a customer-facing app.`,
+    description: `A powerful admin dashboard for managing a multi-category retail business, including books, gifts, games, stationery, and kids’ products. Built with Next.js 15 and TypeScript, this platform enables administrators to manage products, categories, orders, and stock with real-time synchronization to a customer-facing app.`,
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
@@ -13,14 +13,16 @@ export const myProjects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
     features: [
-      "Full book management — create, edit, delete books, and upload images with Cloudinary integration.",
-      " Category management with cascading updates and safe deletion.",
-      " Order management — track, update status, and receive orders from a connected customer app with email notifications.",
-      " Purchase management — restock books, log purchase prices and quantities.",
-      " Dashboard statistics with Chart.js visualizations (orders by status, stock level, books by category).",
-      " Admin authentication via JWT with route protection and password reset via email (Resend).",
-      " Server-side filtering, pagination, and full CRUD via Next.js API routes.",
-      " Connected System – Integrated with a separate customer app for real-time order and stock synchronization.",
+      "Full product management — create, edit, delete books, gifts, games, stationery, and kids’ items with Cloudinary image uploads.",
+      "Category and subcategory management with cascading updates and safe deletion.",
+      "Order management —  update status, and receive orders from a connected customer app with email notifications.",
+      "Purchase management — restock products, log purchase prices and quantities.",
+      "Automatic stock alert system — real-time updates whenever stock changes due to purchases, sales, or deliveries.",
+      "Advanced filtering by category, subcategory, and product status (new, promotion).",
+      "Dashboard statistics with Chart.js visualizations (orders by status, stock levels, products by category).",
+      "Admin authentication via JWT with route protection and password reset via email (Resend).",
+      "Server-side filtering, pagination, and full CRUD via Next.js API routes.",
+      "Connected System – Integrated with a separate customer app for real-time order and stock synchronization.",
     ],
     image: "/ghiz-book-manager.png", // replace with your actual preview image path
     imagesDetails: ["/ghiz-book-manager1.png", "/ghiz-book-manager2.png"], // update with real image paths
@@ -36,7 +38,7 @@ export const myProjects = [
         password: "123123",
       },
       userNote:
-        "This is the admin dashboard. You can log in as an admin to test the book, category, and order management features. It is connected in real time with the customer app where users place orders.",
+        "This is the admin dashboard. You can log in as an admin to test product, category, and order management. It is connected in real time with the customer app where users place orders ( ghiz-book-store.vercel.app)",
       warning:
         "⚠️ This is a demo environment. All changes and orders are for testing purposes only.",
     },
@@ -126,7 +128,7 @@ export const myProjects = [
     id: 3,
     tech: "react",
     title: "Bookstore Client App",
-    description: `A modern, responsive bookstore platform built with React and TypeScript. It allows users to browse and search books, manage favorites and cart, and place orders via a seamless cash-on-delivery checkout. All data is fetched from a connected admin dashboard API.`,
+    description: `A modern, responsive multi-category e-commerce platform built with React and TypeScript. It allows users to browse and purchase books, gifts, games, stationery, and kids’ products, with advanced server-side filtering, search, and pagination. Orders are placed via a seamless cash-on-delivery checkout and synced in real time with the admin dashboard.`,
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", // React
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", // TypeScript
@@ -134,16 +136,17 @@ export const myProjects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", // Tailwind CSS
     ],
     features: [
-      " Browse and search books with server-side category filtering, title search, and pagination.",
-      " Save books to a Favorites page for quick access later.",
-      " Full cart functionality: add/remove books, manage quantities, and submit orders.",
-      " Order confirmation page with full details retrieved from the admin API.",
-      "Book detail pages with dynamic routing.",
-      " Contact form to send messages to admin via Resend email API.",
-      " Informational About page.",
-      " Form validation using React Hook Form and Zod.",
-      " Smooth animations powered by Framer Motion.",
-      " Fully responsive layout optimized for all devices.",
+      "Advanced product browsing with server-side filtering by category, subcategory, and product status (new, promotion).",
+      "Search by title and keywords with paginated results for performance on large datasets.",
+      "Favorites page to save and quickly access desired products.",
+      "Full cart functionality: add/remove products, manage quantities, and place orders via cash-on-delivery checkout.",
+      "Order confirmation page with details retrieved from the connected admin API.",
+      "Product detail pages with dynamic routing.",
+      "Real-time synchronization with the admin dashboard for stock updates.",
+      "Contact form integrated with Resend API to send messages directly to the admin.",
+      "Form validation powered by React Hook Form and Zod.",
+      "Smooth animations and transitions built with Framer Motion.",
+      "Fully responsive, mobile-first layout optimized for all devices.",
     ],
     image: "/ghiz-bookShop.png", // Replace with your actual screenshot
     imagesDetails: ["/ghiz-bookShop1.png", "/ghiz-bookShop2.png"], // Replace with actual images
@@ -153,9 +156,8 @@ export const myProjects = [
       link: "https://ghiz-book-store.vercel.app/",
       lable: "ghiz-book-store.vercel.app",
     },
-    linkToCode: " https://github.com/Amin-Chogueur/ghiz-book-store",
+    linkToCode: "https://github.com/Amin-Chogueur/ghiz-book-store",
   },
-
   {
     id: 4,
     tech: "mern",
