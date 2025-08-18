@@ -36,9 +36,7 @@ function Hero() {
           <TypeComponent />
         </h2>
         <p>
-          With one year of experience specializing in React and Next.js, I
-          create fast, responsive, and user-friendly web applications. My work
-          emphasizes clean code and delivering a seamless user experience.
+          With two years of experience specializing in React and Next.js, I create fast, responsive, and user-friendly web applications. My work emphasizes clean code and delivering a seamless user experience.
         </p>
         <a
           href="/AminChogueur-Resume.pdf"
