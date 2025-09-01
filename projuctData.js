@@ -2,8 +2,8 @@ export const myProjects = [
   {
     id: 2,
     tech: "next",
-    title: "BookShop Admin Dashboard",
-    description: `A powerful admin dashboard for managing a multi-category retail business, including books, gifts, games, stationery, and kids’ products. Built with Next.js 15 and TypeScript, this platform enables administrators to manage products, categories, orders, and stock with real-time synchronization to a customer-facing app.`,
+    title: "Library admin panel",
+    description: `A real-world project, powerful admin panel for managing a multi-category retail business, including books, gifts, games, stationery, and kids’ products. Built with Next.js 15 and TypeScript, this platform enables administrators to manage products, categories, orders, and stock with real-time synchronization to a customer-facing app.`,
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
@@ -18,6 +18,7 @@ export const myProjects = [
       "Order management —  update status, and receive orders from a connected customer app with email notifications.",
       "Purchase management — restock products, log purchase prices and quantities.",
       "Automatic stock alert system — real-time updates whenever stock changes due to purchases, sales, or deliveries.",
+      "Print ticket functionality for sales — generate receipts for both in-store transactions and online orders.",
       "Advanced filtering by category, subcategory, and product status (new, promotion).",
       "Dashboard statistics with Chart.js visualizations (orders by status, stock levels, products by category).",
       "Admin authentication via JWT with route protection and password reset via email (Resend).",
@@ -29,8 +30,8 @@ export const myProjects = [
     direction: "left",
     button: "Details",
     linkToVercel: {
-      link: "https://ghiz-read-manager.vercel.app/",
-      lable: "ghiz-read-manager.vercel.app",
+      link: "https://library-admin-panel.vercel.app/",
+      lable: "library-admin-panel.vercel.app",
     },
     demoInfo: {
       admin: {
@@ -38,7 +39,7 @@ export const myProjects = [
         password: "123123",
       },
       userNote:
-        "This is the admin dashboard. You can log in as an admin to test product, category, and order management. It is connected in real time with the customer app where users place orders ( ghiz-book-store.vercel.app)",
+        "This is the admin panel. You can log in as an admin to test product, category, and order management. It is connected in real time with the customer app where users place orders ( amin-online-library.vercel.app)",
       warning:
         "⚠️ This is a demo environment. All changes and orders are for testing purposes only.",
     },
@@ -127,8 +128,8 @@ export const myProjects = [
   {
     id: 3,
     tech: "react",
-    title: "Bookstore Client App",
-    description: `A modern, responsive multi-category e-commerce platform built with React and TypeScript. It allows users to browse and purchase books, gifts, games, stationery, and kids’ products, with advanced server-side filtering, search, and pagination. Orders are placed via a seamless cash-on-delivery checkout and synced in real time with the admin dashboard.`,
+    title: "Online library Client App",
+    description: `A real-world project, modern, responsive multi-category e-commerce platform built with React and TypeScript. It allows users to browse and purchase books, gifts, games, stationery, and kids’ products, with advanced server-side filtering, search, and pagination. Orders are placed via a seamless cash-on-delivery checkout and synced in real time with the admin dashboard.`,
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", // React
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", // TypeScript
@@ -152,11 +153,15 @@ export const myProjects = [
     imagesDetails: ["/ghiz-bookShop1.png", "/ghiz-bookShop2.png"], // Replace with actual images
     direction: "left",
     button: "Details",
-    linkToVercel: {
-      link: "https://ghiz-book-store.vercel.app/",
-      lable: "ghiz-book-store.vercel.app",
+    linkToWeb: {
+      link: "https://www.ghizo-bookshop.com/",
+      lable: "ghizo-bookshop.com",
     },
-    linkToCode: "https://github.com/Amin-Chogueur/ghiz-book-store",
+    linkToVercel: {
+      link: "https://amin-online-library.vercel.app/",
+      lable: "amin-online-library.vercel.app",
+    },
+    linkToCode: "https://github.com/Amin-Chogueur/online-library",
   },
   {
     id: 4,
