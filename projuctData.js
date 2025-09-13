@@ -24,6 +24,7 @@ export const myProjects = [
       "Admin authentication via JWT with route protection and password reset via email (Resend).",
       "Server-side filtering, pagination, and full CRUD via Next.js API routes.",
       "Connected System – Integrated with a separate customer app for real-time order and stock synchronization.",
+      "Net profit calculation — automatically computes profit for each sale and delivered order.",
     ],
     image: "/ghiz-book-manager.png", // replace with your actual preview image path
     imagesDetails: ["/ghiz-book-manager1.png", "/ghiz-book-manager2.png"], // update with real image paths
@@ -150,7 +151,7 @@ export const myProjects = [
       "Fully responsive, mobile-first layout optimized for all devices.",
     ],
     image: "/ghiz-bookShop.png", // Replace with your actual screenshot
-    imagesDetails: ["/ghiz-bookShop1.png", "/ghiz-bookShop2.png"], // Replace with actual images
+    imagesDetails: ["/ghiz-bookShop1.png", "/ghiz-bookShop2.png"],
     direction: "left",
     button: "Details",
     linkToWeb: {
@@ -177,7 +178,7 @@ export const myProjects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
     features: [
-      "First full-stack MERN application, built to understand the fundamentals of complete web app development.",
+      "full-stack MERN application, built to understand the fundamentals of complete web app development.",
       "Implemented authentication and authorization using JWT for secure user registration and login.",
       "Users can add, update, delete, and search for contacts with ease.",
       "Includes filtering options to help users organize contacts efficiently.",
