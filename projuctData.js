@@ -109,14 +109,16 @@ export const myProjects = [
       "Ensured a user-friendly experience across all devices with mobile-first responsive design.",
       "Demonstrated front-end expertise with React and Next.js in a real-world business project.",
       "Delivered a high-quality, accessible solution aligned with the client’s business goals.",
+      "Currently enhancing the website by making it dynamic through an admin panel that allows the admin to generate and manage website content, including blogs, services, and career pages.",
     ],
+
     linkToWeb: {
       link: "https://made4cloud.com/",
       lable: "made4cloud.com",
     },
     linkToVercel: {
-      link: "https://made4cloud-ltd.vercel.app/",
-      lable: "made4cloud-ltd.vercel.app",
+      link: "https://made4cloud-ltd-client.vercel.app/",
+      lable: "made4cloud-ltd-client.vercel",
     },
     image: "/made4cloud.png",
     imagesDetails: ["/made4cloud2.png", "/made4cloud1.png"],
