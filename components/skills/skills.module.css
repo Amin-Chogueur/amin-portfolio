@@ -57,7 +57,7 @@
 .skillLabel {
   font-size: 1rem;
   font-weight: 500;
-  color: white;
+  color: var(--BtnColor);
   text-align: center;
 }
 

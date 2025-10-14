@@ -35,18 +35,19 @@ function About() {
       >
         <h2 className={"gradientText"}>About me</h2>
         <p>
-          I began my coding journey in 2023 by learning C++ to build a strong
-          foundation in programming. Soon after, I discovered my passion for web
-          development and have been growing ever since. As a freelancer for
-          Made4Cloud Ltd, I’ve had the opportunity to work on real-world
-          projects that helped me turn that passion into professional
-          experience.
+          I’m a front-end web developer specializing in React and Next.js. I
+          build fast, responsive, and user-friendly web applications that solve
+          real-world problems.
         </p>
         <p>
-          Now, I’m looking to join a company where I can collaborate with a
-          team, continue learning, and take my skills to the next level. I’m
-          excited to contribute, grow alongside experienced developers, and keep
-          doing what I love—building meaningful digital solutions.
+          I’m passionate about writing clean, maintainable code and creating
+          seamless user experiences. My work combines attention to detail with a
+          focus on performance and accessibility.
+        </p>
+        <p>
+          I’m now seeking an opportunity to join a collaborative team where I
+          can keep learning, contribute to impactful projects, and grow both
+          technically and creatively.
         </p>
       </motion.div>
     </div>

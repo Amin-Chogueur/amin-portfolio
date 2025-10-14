@@ -35,6 +35,14 @@ function Project() {
           React
         </button>
         <button
+          className={activeFilter === "vue" && styles.active}
+          onClick={() => {
+            setTech("vue"), setActiveFilter("vue");
+          }}
+        >
+          Vue
+        </button>
+        <button
           className={activeFilter === "mern" && styles.active}
           onClick={() => {
             setTech("mern"), setActiveFilter("mern");

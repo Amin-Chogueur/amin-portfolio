@@ -228,4 +228,33 @@ export const myProjects = [
     },
     linkToCode: "https://github.com/Amin-Chogueur/food-recipe-app",
   },
+  {
+    id: 6,
+    tech: "vue",
+    title: "HireHub App",
+    description:
+      "A job listing application built with Vue.js to learn the fundamentals of the framework. The app allows users to perform full CRUD operations and interact with a backend built using Next.js and MongoDB.",
+    technologies: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    ],
+    features: [
+      "Implements complete CRUD functionality for managing job listings.",
+      "Connected to a backend built with Next.js and MongoDB for data persistence.",
+      "Uses Vue Router for seamless client-side routing and navigation.",
+      "Includes Vue Toastification for user-friendly notifications.",
+      "Styled with Tailwind CSS to achieve a clean and responsive design.",
+      "Developed as a hands-on project to master the core concepts of Vue.js and component-based development.",
+    ],
+    image: "/vuejob1.png",
+    imagesDetails: ["/vuejob2.png", "/vuejob3.png"],
+    direction: "right",
+    button: "Details",
+    linkToVercel: {
+      link: "https://vue-hire-hub.vercel.app/",
+      lable: "vue-hire-hub.vercel.app",
+    },
+    linkToCode: "https://github.com/Amin-Chogueur/HireHub",
+  },
 ];
