@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import styles from "./myjourney.module.css";
+import styles from "./myJourney.module.css";
 function MyJourney() {
   // Use two different refs for the image and text
   const ref = useRef(null);
