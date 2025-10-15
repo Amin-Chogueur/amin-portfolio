@@ -27,6 +27,7 @@
   --inputColor: #c0c0c0;
   --toggleBg: black;
   --bergurColor: rgb(255, 200, 0);
+  --skills: rgba(255, 255, 255, 0.1);
 }
 .light {
   --BtnColor: black;
@@ -39,6 +40,7 @@
   --btnBg: linear-gradient(to right, #16213e, #1a1a2e);
   --toggleBg: #1a1a2e;
   --bergurColor: #1a1a2e;
+  --skills: white;
 }
 
 html {

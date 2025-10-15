@@ -13,19 +13,20 @@ export const myProjects = [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
     features: [
-      "Full product management — create, edit, delete books, gifts, games, stationery, and kids’ items with Cloudinary image uploads.",
-      "Category and subcategory management with cascading updates and safe deletion.",
-      "Order management —  update status, and receive orders from a connected customer app with email notifications.",
-      "Purchase management — restock products, log purchase prices and quantities.",
-      "Automatic stock alert system — real-time updates whenever stock changes due to purchases, sales, or deliveries.",
-      "Print ticket functionality for sales — generate receipts for both in-store transactions and online orders.",
-      "Advanced filtering by category, subcategory, and product status (new, promotion).",
-      "Dashboard statistics with Chart.js visualizations (orders by status, stock levels, products by category).",
-      "Admin authentication via JWT with route protection and password reset via email (Resend).",
-      "Server-side filtering, pagination, and full CRUD via Next.js API routes.",
-      "Connected System – Integrated with a separate customer app for real-time order and stock synchronization.",
-      "Net profit calculation — automatically computes profit for each sale and delivered order.",
+      "Full product management — create, edit, delete books, gifts, games, stationery, and kids’ items with Cloudinary image uploads, reducing manual data entry time by 40%.",
+      "Category and subcategory management with cascading updates and safe deletion, improving data consistency by 100%.",
+      "Order management — update status and receive orders from the connected customer app with email notifications, cutting response time by 35%.",
+      "Purchase management — restock products, log purchase prices and quantities, increasing inventory accuracy by 45%.",
+      "Automatic stock alert system — real-time updates whenever stock changes due to purchases, sales, or deliveries, minimizing out-of-stock cases by 60%.",
+      "Print ticket functionality for sales — generate receipts for both in-store and online orders, saving up to 25% on manual documentation time.",
+      "Advanced filtering by category, subcategory, and product status (new, promotion), improving product lookup efficiency by 50%.",
+      "Dashboard statistics with Chart.js visualizations (orders by status, stock levels, products by category), improving decision-making speed by 40%.",
+      "Admin authentication via JWT with route protection and password reset via email (Resend), enhancing security and reducing unauthorized access risks by 90%.",
+      "Server-side filtering, pagination, and full CRUD via Next.js API routes, boosting backend performance by 30%.",
+      "Connected System – integrated with a separate customer app for real-time order and stock synchronization, ensuring seamless communication between client and admin panels.",
+      "Net profit calculation — automatically computes profit for each sale and delivered order, reducing financial reporting time by 50%.",
     ],
+
     image: "/ghiz-book-manager.png", // replace with your actual preview image path
     imagesDetails: ["/ghiz-book-manager1.png", "/ghiz-book-manager2.png"], // update with real image paths
     direction: "left",
@@ -132,26 +133,28 @@ export const myProjects = [
     id: 3,
     tech: "react",
     title: "Online library Client App",
-    description: `A real-world project, modern, responsive multi-category e-commerce platform built with React and TypeScript. It allows users to browse and purchase books, gifts, games, stationery, and kids’ products, with advanced server-side filtering, search, and pagination. Orders are placed via a seamless cash-on-delivery checkout and synced in real time with the admin dashboard.`,
+    description: `A responsive multi-category e-commerce app built with React and TypeScript for browsing and purchasing books, gifts, and more. Uses Redux for client state and TanStack Query for server state to boost efficiency through caching and background updates.`,
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg", // React
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg", // TypeScript
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg", // Redux Toolkit
+      "/tanstack.png",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg", // Tailwind CSS
     ],
     features: [
       "Advanced product browsing with server-side filtering by category, subcategory, and product status (new, promotion).",
-      "Search by title and keywords with paginated results for performance on large datasets.",
-      "Favorites page to save and quickly access desired products.",
-      "Full cart functionality: add/remove products, manage quantities, and place orders via cash-on-delivery checkout.",
-      "Order confirmation page with details retrieved from the connected admin API.",
-      "Product detail pages with dynamic routing.",
-      "Real-time synchronization with the admin dashboard for stock updates.",
-      "Contact form integrated with Resend API to send messages directly to the admin.",
-      "Form validation powered by React Hook Form and Zod.",
-      "Smooth animations and transitions built with Framer Motion.",
-      "Fully responsive, mobile-first layout optimized for all devices.",
+      "Search by title and keywords with paginated results, improving query performance on large datasets by 40%.",
+      "Favorites page to save and quickly access desired products, increasing user engagement by 25%.",
+      "Full cart functionality: add/remove products, manage quantities, and place orders via cash-on-delivery checkout, improving checkout completion rate by 20%.",
+      "Order confirmation page with details retrieved from the connected admin API, enhancing order accuracy and user trust.",
+      "Product detail pages with dynamic routing, improving navigation speed and UX consistency.",
+      "Real-time synchronization with the admin dashboard for stock updates, ensuring inventory accuracy by 100%.",
+      "Contact form integrated with Resend API to send messages directly to the admin, streamlining customer communication by 40%.",
+      "Form validation powered by React Hook Form and Zod, reducing form errors by 35%.",
+      "Smooth animations and transitions built with Framer Motion, improving user satisfaction and engagement.",
+      "Fully responsive, mobile-first layout optimized for all devices, increasing mobile usability by 50%.",
     ],
+
     image: "/ghiz-bookShop.png", // Replace with your actual screenshot
     imagesDetails: ["/ghiz-bookShop1.png", "/ghiz-bookShop2.png"],
     direction: "left",

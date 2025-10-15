@@ -1,6 +1,11 @@
+.container {
+  background-color: var(--bg);
+}
 .details {
   padding: 30px 0;
-  background-color: var(--bg);
+
+  max-width: 900px;
+  margin: auto;
 }
 
 .details h1 {
@@ -16,6 +21,7 @@
   justify-content: center;
   gap: 40px;
   margin: auto;
+  margin-top: 15px;
   width: fit-content;
   background-color: var(--headerBg);
   padding: 10px;

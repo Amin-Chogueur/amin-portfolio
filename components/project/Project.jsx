@@ -21,13 +21,13 @@ function Project() {
           onClick={() => {
             setTech("next"), setActiveFilter("next");
           }}
-          className={activeFilter === "next" && styles.active}
+          className={activeFilter === "next" ? styles.active : ""}
         >
           Next Js
         </button>
 
         <button
-          className={activeFilter === "react" && styles.active}
+          className={activeFilter === "react" ? styles.active : ""}
           onClick={() => {
             setTech("react"), setActiveFilter("react");
           }}
@@ -35,7 +35,7 @@ function Project() {
           React
         </button>
         <button
-          className={activeFilter === "vue" && styles.active}
+          className={activeFilter === "vue" ? styles.active : ""}
           onClick={() => {
             setTech("vue"), setActiveFilter("vue");
           }}
@@ -43,7 +43,7 @@ function Project() {
           Vue
         </button>
         <button
-          className={activeFilter === "mern" && styles.active}
+          className={activeFilter === "mern" ? styles.active : ""}
           onClick={() => {
             setTech("mern"), setActiveFilter("mern");
           }}

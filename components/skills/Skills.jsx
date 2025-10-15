@@ -42,6 +42,10 @@ function Skills() {
       label: "Next.js",
     },
     {
+      src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg",
+      label: "Vue.js",
+    },
+    {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
       label: "Express",
     },
@@ -60,6 +64,10 @@ function Skills() {
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
       label: "Redux",
+    },
+    {
+      src: "/tanstack.png",
+      label: "TanStack Query",
     },
   ];
 
