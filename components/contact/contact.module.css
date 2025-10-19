@@ -47,6 +47,7 @@
   border-radius: 4px;
   color: var(--inputColor);
   background-color: var(--inputBg);
+  margin-bottom: 15px;
 }
 
 .contactForm input:focus,
@@ -65,6 +66,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-shadow: 0 4px 4px black;
 }
 
 .contactForm button:hover {

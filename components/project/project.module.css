@@ -26,6 +26,12 @@
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 0 4px 4px black;
+}
+.filter button:hover {
+  background-image: var(--btnBg);
+  color: var(--BtnColorActive);
+  transition: all 0.5s;
 }
 
 .filter button.active {

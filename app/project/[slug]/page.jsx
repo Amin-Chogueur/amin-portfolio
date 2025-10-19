@@ -40,7 +40,8 @@ function ProjectDetails({ params }) {
           <h2 className="gradientText">Technology:</h2>
           <div className={styles.technologies}>
             {project.technologies.map((tech, i) => (
-              <Image key={i} src={tech} width={60} height={60} alt={"tech"} />
+              
+              <Image key={i} src={tech} width={40} height={40} alt={"tech"} />
             ))}
           </div>
           <h2 className="gradientText">Features:</h2>

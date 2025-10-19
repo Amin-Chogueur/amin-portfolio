@@ -9,7 +9,7 @@ function MyJourney() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref} id="About">
+    <div ref={ref} id="Journy">
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={

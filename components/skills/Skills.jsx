@@ -31,7 +31,7 @@ function Skills() {
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-      label: "Tailwind CSS",
+      label: "Tailwind",
     },
     {
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg",
@@ -67,7 +67,7 @@ function Skills() {
     },
     {
       src: "/tanstack.png",
-      label: "TanStack Query",
+      label: "TanStack",
     },
   ];
 

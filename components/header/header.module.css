@@ -82,12 +82,12 @@
     justify-content: center;
     gap: 20px;
     position: absolute;
-    top: -270px;
+    top: -300px;
     left: 0px;
     width: 100%;
     background-color: var(--headerBg);
     color: white;
-    height: 270px;
+    padding-bottom: 5px;
     transition: top 0.5s;
     z-index: -10;
   }

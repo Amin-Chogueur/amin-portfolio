@@ -19,6 +19,11 @@ const navLinks = [
     label: "About",
   },
   {
+    id: 5,
+    url: "/#Journy",
+    label: "Journy",
+  },
+  {
     id: 2,
     url: "/#Skills",
     label: "Skills",

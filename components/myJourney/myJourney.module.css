@@ -16,3 +16,15 @@
   line-height: 1.6;
   font-size: 20px;
 }
+
+@media (max-width: 992px) {
+  .journeyContainer p {
+    font-size: 18px; /* Smaller font size for paragraphs */
+  }
+}
+
+@media (max-width: 480px) {
+  .journeyContainer p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+}

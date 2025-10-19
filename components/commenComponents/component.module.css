@@ -67,6 +67,7 @@
   border-radius: 5px;
   color: var(--BtnColorActive);
   font-weight: 600;
+  box-shadow: 0 4px 4px black;
 }
 
 /* Responsive Styles */
