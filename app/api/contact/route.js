@@ -8,7 +8,7 @@ export async function POST(request) {
 
   try {
     const data = await resend.emails.send({
-      from: "Acme <onboarding@resend.dev>", // replace with your sender email
+      from: "Amin Portfolio <onboarding@resend.dev>", // replace with your sender email
       to: "chogueuramine@gmail.com", // form input email
       subject: "Message from my portfolio",
       html: `<p>Name: ${body.name}</p><p>Email: ${body.email}</p><p>Message: ${body.message}</p>`,

@@ -234,6 +234,37 @@ export const myProjects = [
   {
     id: 6,
     tech: "vue",
+    title: "VuePhone eCommerce",
+    description:
+      "A sleek and responsive eCommerce web application built with Vue.js that allows users to browse and purchase phones effortlessly. It includes cart and wishlist management powered by Pinia, advanced filtering by category, brand, and price range, and full support for dark and light modes. The app delivers a smooth shopping experience with intuitive navigation, real-time state updates, and a clean modern interface.",
+    technologies: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pinia/pinia-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    ],
+    features: [
+      "Add, increase, decrease, and remove products from the shopping cart.",
+      "Manage a personalized wishlist with the same add and remove functionality.",
+      "Filter products dynamically by category, brand, and price range.",
+      "Supports dark and light mode for an enhanced user experience.",
+      "Uses Pinia for centralized and efficient state management.",
+      "Vue Router ensures seamless client-side navigation.",
+      "Responsive and clean UI styled with Tailwind CSS for an optimized user experience.",
+    ],
+    image: "/vuephone1.png",
+    imagesDetails: ["/vuephone2.png", "/vuephone3.png"],
+    direction: "left",
+    button: "Details",
+    linkToVercel: {
+      link: "https://myvue-phone-app.vercel.app/",
+      lable: "myvue-phone-app.vercel.app",
+    },
+    linkToCode: "https://github.com/Amin-Chogueur/vuePhone",
+  },
+  {
+    id: 6,
+    tech: "vue",
     title: "HireHub App",
     description:
       "A job listing application built with Vue.js to learn the fundamentals of the framework. The app allows users to perform full CRUD operations and interact with a backend built using Next.js and MongoDB.",
