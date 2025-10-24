@@ -69,6 +69,10 @@ function Skills() {
       src: "/tanstack.png",
       label: "TanStack",
     },
+    {
+      src: "https://pinia.vuejs.org/logo.svg",
+      label: "Pinia",
+    },
   ];
 
   return (
