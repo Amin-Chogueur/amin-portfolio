@@ -239,7 +239,7 @@ export const myProjects = [
       "A sleek and responsive eCommerce web application built with Vue.js that allows users to browse and purchase phones effortlessly. It includes cart and wishlist management powered by Pinia, advanced filtering by category, brand, and price range, and full support for dark and light modes. The app delivers a smooth shopping experience with intuitive navigation, real-time state updates, and a clean modern interface.",
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pinia/pinia-original.svg",
+      "https://pinia.vuejs.org/logo.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     ],
