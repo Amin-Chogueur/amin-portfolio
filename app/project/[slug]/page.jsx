@@ -22,7 +22,7 @@ function ProjectDetails({ params }) {
             height={500}
             alt={project?.title}
           />
-          {project.imagesDetails && (
+          {project?.imagesDetails && (
             <div className={styles.images}>
               {project.imagesDetails?.map((image, i) => (
                 <Image
@@ -39,19 +39,18 @@ function ProjectDetails({ params }) {
         <div className={styles.content}>
           <h2 className="gradientText">Technology:</h2>
           <div className={styles.technologies}>
-            {project.technologies.map((tech, i) => (
-              
+            {project?.technologies.map((tech, i) => (
               <Image key={i} src={tech} width={40} height={40} alt={"tech"} />
             ))}
           </div>
           <h2 className="gradientText">Features:</h2>
           <ul>
-            {project.features.map((feture, i) => (
+            {project?.features.map((feture, i) => (
               <li key={i}>{feture}</li>
             ))}
           </ul>
           <div className={styles.links}>
-            {project.linkToWeb && (
+            {project?.linkToWeb && (
               <p>
                 <span>
                   {" "}
@@ -64,7 +63,7 @@ function ProjectDetails({ params }) {
                 </Link>
               </p>
             )}
-            {project.linkToVercel && (
+            {project?.linkToVercel && (
               <p>
                 <span>
                   {" "}
@@ -78,12 +77,23 @@ function ProjectDetails({ params }) {
               </p>
             )}
 
-            {project.demoInfo && (
+            {project?.demoInfo && (
               <div className={styles.demoInfo}>
                 <h4>🧪 How to Test the App</h4>
 
                 <div className={styles.demoBlock}>
                   <strong>Admin Login</strong>
+                  {project.demoInfo.admin?.link ? (
+                    <p>
+                      Link:
+                      <Link
+                        href={project.demoInfo.admin?.link}
+                        target={"_blank"}
+                      >
+                        {project.demoInfo.admin?.link}
+                      </Link>
+                    </p>
+                  ) : null}
                   <p>
                     Email: <code>{project.demoInfo.admin.email}</code>
                   </p>
@@ -101,7 +111,7 @@ function ProjectDetails({ params }) {
               </div>
             )}
 
-            {project.linkToCode && (
+            {project?.linkToCode && (
               <Link
                 href={project.linkToCode}
                 target={"_blank"}

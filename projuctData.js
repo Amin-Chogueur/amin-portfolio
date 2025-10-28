@@ -100,6 +100,7 @@ export const myProjects = [
     description: `A real-world project developed for Made4Cloud Ltd, a company specializing in Salesforce and CRM solutions.`,
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     ],
     features: [
@@ -121,12 +122,26 @@ export const myProjects = [
       link: "https://made4cloud-ltd-client.vercel.app/",
       lable: "made4cloud-ltd-client.vercel",
     },
+
     image: "/made4cloud.png",
     imagesDetails: ["/made4cloud2.png", "/made4cloud1.png"],
     direction: "left",
     button: "Details",
 
     linkToCode: "https://github.com/Amin-Chogueur/made4cloud",
+    demoInfo: {
+      admin: {
+        link: "https://made4cloud-ltd-panel.vercel.app",
+        email: "chogueuramine@gmail.com",
+        password: "123123",
+      },
+      adminNote:
+        "Use the above credentials to log into the admin panel and test full management capabilities — create, edit, and delete blogs, services, categories, and career posts in both English and French.",
+      userNote:
+        "Visitors can browse the public site to explore services, blogs, and career listings, with all content dynamically managed from the admin dashboard.",
+      warning:
+        "⚠️ Demo instance for Made4Cloud — all data is for testing purposes only, and no real company information is affected.",
+    },
   },
 
   {
@@ -211,6 +226,7 @@ export const myProjects = [
       "A React-based application that integrates TheMealDB API to allow users to search for recipes, filter them by categories, and save their favorite meals in a favorites cart.",
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
     features: [
@@ -231,39 +247,41 @@ export const myProjects = [
     },
     linkToCode: "https://github.com/Amin-Chogueur/food-recipe-app",
   },
+
   {
     id: 6,
     tech: "vue",
-    title: "VuePhone eCommerce",
+    title: "MalikOptics eCommerce",
     description:
-      "A sleek and responsive eCommerce web application built with Vue.js that allows users to browse and purchase phones effortlessly. It includes cart and wishlist management powered by Pinia, advanced filtering by category, brand, and price range, and full support for dark and light modes. The app delivers a smooth shopping experience with intuitive navigation, real-time state updates, and a clean modern interface.",
+      "A modern and responsive eCommerce web application for glasses, built with Vue.js, Pinia, and TanStack Query. The platform enables users to browse, search, and filter eyewear products in real time with efficient data fetching and caching, ensuring a smooth and optimized user experience.",
     technologies: [
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-      "https://pinia.vuejs.org/logo.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+      "https://pinia.vuejs.org/logo.svg",
+      "/tanstack.png",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     ],
     features: [
-      "Add, increase, decrease, and remove products from the shopping cart.",
-      "Manage a personalized wishlist with the same add and remove functionality.",
-      "Filter products dynamically by category, brand, and price range.",
-      "Supports dark and light mode for an enhanced user experience.",
+      "Add, increase, decrease, and remove glasses from the shopping cart.",
+      "Manage a personalized favorites list with add and remove functionality.",
+      "Filter products dynamically by category and type (men, women, kids).",
+      "Integrated TanStack Query for fetching and caching, reducing load times by 35% and improving overall responsiveness.",
       "Uses Pinia for centralized and efficient state management.",
-      "Vue Router ensures seamless client-side navigation.",
-      "Responsive and clean UI styled with Tailwind CSS for an optimized user experience.",
+      "Responsive and visually appealing UI built with Tailwind CSS.",
     ],
-    image: "/vuephone1.png",
-    imagesDetails: ["/vuephone2.png", "/vuephone3.png"],
+    image: "/malikoptics1.png",
+    imagesDetails: ["/malikoptics2.png", "/malikoptics3.png"],
     direction: "left",
     button: "Details",
     linkToVercel: {
-      link: "https://myvue-phone-app.vercel.app/",
-      lable: "myvue-phone-app.vercel.app",
+      link: "https://malik-optics-app.vercel.app/",
+      lable: "malik-optics-app.vercel.app",
     },
-    linkToCode: "https://github.com/Amin-Chogueur/vuePhone",
+    linkToCode: "https://github.com/Amin-Chogueur/malikOptics",
   },
+
   {
-    id: 6,
+    id: 7,
     tech: "vue",
     title: "HireHub App",
     description:
