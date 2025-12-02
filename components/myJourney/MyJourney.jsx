@@ -34,21 +34,22 @@ function MyJourney() {
           real-world scenarios.
         </p>
         <p className="text-left border-l-4 px-3 mb-6 border-orange-500 p-2 ">
-          As a freelancer for Made4Cloud Ltd, I contributed to building modern,
-          SEO-optimized websites using Next.js, gaining valuable experience in
-          professional web development. While my main focus is on the front end,
-          I’m also passionate about expanding my knowledge of the backend. I’ve
-          learned the basics of Node.js, Express.js, and MongoDB, and I enjoy
-          exploring how both sides of development come together to create
-          full-stack applications that solve real-world problems.
+          Working part-time for Made4Cloud Ltd, I contribute to building modern,
+          SEO-optimized websites using Next.js. This role is helping me grow
+          professionally and strengthen my front-end development skills. While
+          my main focus is on the front end, I’m also expanding my backend
+          knowledge. I already have a foundation in Node.js, Express.js, and
+          MongoDB, and I enjoy exploring how both sides of development work
+          together to create full-stack applications that solve real-world
+          problems.
         </p>
+
         <p className="text-left border-l-4 px-3 mb-6 border-orange-500 p-2 ">
           I’m currently learning Vue.js to broaden my understanding of front-end
-          ecosystems. Looking ahead, I plan to dive into DevOps, starting with
-          Docker and Kubernetes, to enhance my skills and understanding of
-          deployment and scalability. My ultimate goal is to become a full-stack
-          web developer capable of building complete, efficient, and impactful
-          digital solutions from end to end.
+          ecosystems. With my existing backend foundations, I aim to deepen my
+          skills to build more complete and scalable applications. My ultimate
+          goal is to become a full-stack web developer capable of delivering
+          complete, efficient, and impactful digital solutions from end to end.
         </p>
       </motion.div>
     </div>

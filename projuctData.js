@@ -94,6 +94,47 @@ export const myProjects = [
     },
   },
   {
+    id: 23,
+    tech: "next",
+    title: "Tool Management System",
+    description: `A full-stack tool management system built to replace a paper-based workflow and improve operational efficiency in workshops. Developed with Next.js, React, TypeScript, MongoDB, and Tailwind CSS, this application enables storekeepers and employees to securely manage tools, track movements, and ensure full traceability with role-based access control.`,
+    technologies: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      "/tanstack.png",
+    ],
+    features: [
+      "Replaced a paper-based tool workflow with a digital system, reducing human errors by 60%.",
+      "Secure employee verification using PIN codes to confirm tool borrowing and returns.",
+      "Tool registration module with full CRUD operations managed by the storekeeper, improving traceability by 50%.",
+      "Movement tracking system — logs every tool borrow/return with employee validation for complete accountability.",
+      "Status-based filtering to easily track tool availability, stock levels, and employee usage history.",
+      "Role-based authorization for admins, storekeepers, and employees, enhancing security and data integrity.",
+      "Real-time data synchronization using TanStack Query for smooth and optimized UI updates.",
+    ],
+    image: "/miniOdoo.png", // replace with your actual preview image path
+    imagesDetails: ["/miniOdoo1.png", "/miniOdoo2.png"], // add your real screenshots
+    direction: "right",
+    button: "Details",
+    linkToVercel: {
+      link: "https://mini-odoo.vercel.app",
+      lable: "mini-odoo.vercel.app",
+    },
+    demoInfo: {
+      admin: {
+        email: "bilal@gmail.com",
+        password: "111",
+      },
+      userNote:
+        "This is the admin and storekeeper demo. You can test tool registration, movement tracking, and employee verification.",
+      warning:
+        "⚠️ Demo environment — all actions and tool movements are for testing only.",
+    },
+  },
+  {
     id: 1,
     tech: "next",
     title: "website for Made4cloud company",

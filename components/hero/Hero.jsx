@@ -36,10 +36,12 @@ function Hero() {
           <TypeComponent />
         </h2>
         <p>
-          With two years of experience specializing in React and Next.js, I
-          build fast, responsive, and user-friendly web applications that solve
-          real-world problems. My work emphasizes clean code and a seamless user
-          experience.
+          Front-End Developer experienced in building responsive, SEO-friendly
+          web applications using React, Next.js, Vue, and TypeScript. Currently
+          working with Made4Cloud LTD on production systems including
+          e-commerce, dashboards, authentication modules, and content management
+          platforms. Strong focus on clean UI, API integration, performance
+          optimization, and maintainable code.
         </p>
         <a
           href="/AminChogueur-Resume.pdf"
