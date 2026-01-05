@@ -42,14 +42,6 @@ function Project() {
         >
           Vue
         </button>
-        <button
-          className={activeFilter === "mern" ? styles.active : ""}
-          onClick={() => {
-            setTech("mern"), setActiveFilter("mern");
-          }}
-        >
-          MERN
-        </button>
       </div>
       {filteredProject.map((project, i) => (
         <motion.div

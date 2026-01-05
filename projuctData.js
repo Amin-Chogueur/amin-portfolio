@@ -47,52 +47,7 @@ export const myProjects = [
     },
     linkToCode: "https://github.com/Amin-Chogueur/ghiz-read-manager",
   },
-  {
-    id: 0,
-    tech: "next",
-    title: "Evident Academy Platform for Dental Education",
-    description: `A real-world project, secure, multilingual, role-based e-commerce platform for a dental academy offering online courses and club memberships.`,
-    technologies: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    ],
-    features: [
-      "Multilingual Support – Seamless content switching between English and French using next-intl.",
-      "Role-Based Access (JWT) – Students can register and purchase courses; Admin can manage content, users, and orders.",
-      "Shopping Cart & PayPal Integration – Smooth checkout flow with cart and secure payment processing.",
-      "External Course Access – Post-purchase, students receive access links (e.g., YouTube, Zoom) for learning—no in-app video hosting.",
-      "Rich Course Management – Admins use a Tiptap rich text editor to add formatted course details.",
-      "Cloudinary Integration – Efficient course image handling and storage.",
-      "Admin Dashboard – Full CRUD for courses, user/order management with filtering and conference scheduling.",
-      "Modern UX/UI – Built with Tailwind CSS, React Hook Form, and React Toastify for a responsive, user-friendly experience.",
-      "State Management – Redux is used to handle global application state such as cart, user authentication, and admin actions.",
-    ],
-    image: "/evident.png",
-    imagesDetails: ["/evident2.png", "/evident1.png"],
-    direction: "right",
-    button: "Details",
-    linkToWeb: {
-      link: "https://evident-academy.com/",
-      lable: "evident-academy.com",
-    },
-    linkToVercel: {
-      link: "https://evident-academy.vercel.app/",
-      lable: "evident-academy.vercel.app",
-    },
-    demoInfo: {
-      admin: {
-        email: "evidentAcademy@gmail.com",
-        password: "123123",
-      },
-      userNote:
-        "You can create a test account using any email address and explore features like browsing, adding courses to cart, and checking out.",
-      warning: "⚠️ This is a demo instance. No real payment is processed.",
-    },
-  },
+
   {
     id: 23,
     tech: "next",
@@ -225,40 +180,7 @@ export const myProjects = [
     },
     linkToCode: "https://github.com/Amin-Chogueur/online-library",
   },
-  {
-    id: 4,
-    tech: "mern",
-    title: "Contact Management System",
-    description:
-      "A full-stack MERN application that helps users create accounts, store, filter, and search their contacts easily, ensuring they never lose important information.",
-    technologies: [
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    ],
-    features: [
-      "full-stack MERN application, built to understand the fundamentals of complete web app development.",
-      "Implemented authentication and authorization using JWT for secure user registration and login.",
-      "Users can add, update, delete, and search for contacts with ease.",
-      "Includes filtering options to help users organize contacts efficiently.",
-      "Gained hands-on experience with full CRUD operations and RESTful API development.",
-      "Applied state management to maintain consistent application behavior across components.",
-      "Provided real-world experience in developing, and deploying a full-stack application.",
-    ],
 
-    image: "/contact-ms2.png",
-    imagesDetails: ["/contact-ms.png", "/contact-ms1.png"],
-    direction: "left",
-    button: "Details",
-    linkToVercel: {
-      link: "https://contact-msa.vercel.app/",
-      lable: "contact-msa.vercel.app",
-    },
-
-    linkToCode: "https://github.com/Amin-Chogueur/contact-ms",
-  },
   {
     id: 5,
     tech: "react",
