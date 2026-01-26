@@ -11,7 +11,7 @@ function Footer() {
         <Link href={"/"}>{`{AMIN.DEV}`}</Link>
       </h2>
       <p>
-        Copyright © 2024{" "}
+        Copyright © {new Date().getFullYear()}{" "}
         <Link className={`gradientText`} href={"/"}>
           Amin Chogueur
         </Link>

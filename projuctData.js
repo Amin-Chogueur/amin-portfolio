@@ -272,4 +272,36 @@ export const myProjects = [
     },
     linkToCode: "https://github.com/Amin-Chogueur/HireHub",
   },
+  {
+    id: 8, // Assuming this is the next one in your list
+    tech: "pern",
+    title: "Mini Market Place",
+    description:
+      "A full-stack peer-to-peer marketplace platform where users can list products for sale and connect directly with buyers. This project showcases a transition to relational data modeling using PostgreSQL and Drizzle ORM, ensuring strict type-safety and efficient management of user-generated listings and seller-buyer relationships.",
+    technologies: [
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    ],
+    features: [
+      "Architected a robust REST API using Node.js and Express with a PostgreSQL backbone.",
+      "Implemented Drizzle ORM to ensure end-to-end type safety and efficient relational data queries.",
+      "Integrated Clerk Auth for secure, industry-standard user authentication and session management.",
+      "Leveraged TanStack Query for advanced data fetching, synchronization, and server-state caching.",
+      "Developed a polished, responsive UI using Tailwind CSS and DaisyUI components.",
+      "Built with TypeScript to eliminate runtime errors and improve developer experience through strict typing.",
+    ],
+    image: "/mmp.png", // Replace with your actual image path
+    imagesDetails: ["/mmp1.png", "/mmp2.png"], // Replace with your actual image paths
+    direction: "left", // Alternating direction looks good in portfolios
+    button: "Details",
+    linkToVercel: {
+      link: "https://mini-market-place-app.vercel.app/", // Replace with your actual link
+      lable: "mini-market-place-app.vercel.app",
+    },
+    linkToCode: "https://github.com/Amin-Chogueur/miniMarketPlace", // Replace with your actual repo
+  },
 ];

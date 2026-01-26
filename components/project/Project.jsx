@@ -11,7 +11,7 @@ function Project() {
   const [tech, setTech] = useState("next");
   const [activeFilter, setActiveFilter] = useState("next");
   const filteredProject = myProjects.filter((project) =>
-    project.tech === tech ? project : null
+    project.tech === tech ? project : null,
   );
   return (
     <div ref={ref} className={styles.project} id="Projects">
@@ -19,7 +19,7 @@ function Project() {
       <div className={styles.filter}>
         <button
           onClick={() => {
-            setTech("next"), setActiveFilter("next");
+            (setTech("next"), setActiveFilter("next"));
           }}
           className={activeFilter === "next" ? styles.active : ""}
         >
@@ -29,7 +29,7 @@ function Project() {
         <button
           className={activeFilter === "react" ? styles.active : ""}
           onClick={() => {
-            setTech("react"), setActiveFilter("react");
+            (setTech("react"), setActiveFilter("react"));
           }}
         >
           React
@@ -37,10 +37,18 @@ function Project() {
         <button
           className={activeFilter === "vue" ? styles.active : ""}
           onClick={() => {
-            setTech("vue"), setActiveFilter("vue");
+            (setTech("vue"), setActiveFilter("vue"));
           }}
         >
           Vue
+        </button>
+        <button
+          className={activeFilter === "pern" ? styles.active : ""}
+          onClick={() => {
+            (setTech("pern"), setActiveFilter("pern"));
+          }}
+        >
+          PERN
         </button>
       </div>
       {filteredProject.map((project, i) => (

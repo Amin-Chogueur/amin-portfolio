@@ -44,12 +44,14 @@ function MyJourney() {
           problems.
         </p>
 
-        <p className="text-left border-l-4 px-3 mb-6 border-orange-500 p-2 ">
-          I’m currently learning Vue.js to broaden my understanding of front-end
-          ecosystems. With my existing backend foundations, I aim to deepen my
-          skills to build more complete and scalable applications. My ultimate
-          goal is to become a full-stack web developer capable of delivering
-          complete, efficient, and impactful digital solutions from end to end.
+        <p className="text-left border-l-4 px-3 mb-6 border-orange-500 p-2">
+          After building several full-stack applications with{" "}
+          <strong>Next.js and MongoDB</strong>, I’ve pivoted my journey toward
+          mastering the <strong>PERN stack</strong>. I’m currently focused on
+          deepening my understanding of relational databases and decoupled
+          backend architectures with PostgreSQL and Express. This transition is
+          about choosing the right tool for the job—moving from document-based
+          flexibility to the data integrity and power of SQL.
         </p>
       </motion.div>
     </div>
